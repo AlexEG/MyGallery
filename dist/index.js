@@ -77,3 +77,30 @@ spanImgsMaxNum.textContent = imagesMaxNumber;
 spanImgCurrentNum.textContent = imageNumber;
 
 imgDateTime.textContent = imgsDate[0][1];
+
+// -------------------------- //
+// * PASSWORD *//
+
+document.querySelector("#password-btn").addEventListener("click", () => {
+  if (
+    document.querySelector(
+      "body > div.mt-12.flex.flex-col.items-center > input"
+    ).value === "123456789"
+  ) {
+    document.querySelector("#root").classList.remove("hidden");
+    document.querySelector("div#password-container").innerHTML = "";
+    document.querySelector("div#password-container").classList.add("hidden");
+
+    console.log("password is correct");
+  } else {
+    document.querySelector("#password-btn").classList.remove("bg-fuchsia-700");
+    document.querySelector("#password-btn").classList.add("bg-red-700");
+    document
+      .querySelector("body > div.mt-12.flex.flex-col.items-center > input")
+      .classList.remove("outline-fuchsia-700");
+    document
+      .querySelector("body > div.mt-12.flex.flex-col.items-center > input")
+      .classList.add("outline-red-700");
+    console.log("password incorrect");
+  }
+});

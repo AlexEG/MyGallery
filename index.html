@@ -8,8 +8,8 @@
     <title>MyGallery</title>
     <link href="./dist/index.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="root" class="bg-black h-screen w-full">
+  <body class="bg-black">
+    <div id="root" class="bg-black h-screen w-full hidden">
       <!-- Image Date && Img number -->
       <header class="bg-slate-950 h-6 text-center relative">
         <span class="text-white font-semibold absolute left-2"
@@ -95,6 +95,23 @@
         </button>
       </nav>
     </div>
+
+    <!--* PASSWORD *-->
+    <div id="password-container" class="mt-12 flex flex-col items-center">
+      <input
+        type="password"
+        placeholder="Enter the provider password to access this page"
+        class="max-w-[370px] w-[90%] pl-4 py-1 rounded-full outline-fuchsia-700 bg-black outline-none focus-within:outline-green-600 border-none outline-offset-2 text-white focus-within:placeholder:opacity-20 focus-within:transition-colors duration-500"
+      />
+
+      <button
+        id="password-btn"
+        class="bg-fuchsia-700 text-white font-semibold px-6 py-1 mt-4 rounded-sm"
+      >
+        Enter
+      </button>
+    </div>
+
     <script src="./dist/index.js"></script>
   </body>
 </html>
