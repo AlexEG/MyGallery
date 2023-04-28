@@ -1,0 +1,23 @@
+{
+  "name": "mygallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEG/MyGallery.git"
+  },
+  "keywords": [],
+  "author": "AlexEG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEG/MyGallery/issues"
+  },
+  "homepage": "https://github.com/AlexEG/MyGallery#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/AlexEG.png" type="image/png" />
+    <title>MyGallery</title>
+    <link href="./dist/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root" class="bg-black h-screen w-full">
+      <!-- Image Date && Img number -->
+      <header class="bg-slate-950 h-6 text-center relative">
+        <span class="text-white font-semibold absolute left-2"
+          ><span id="current-img-num">?</span> /
+          <span id="max-img-num">?</span></span
+        >
+        <time id="img-date" class="text-white font-semibold">????-??-??</time>
+      </header>
+
+      <!-- image container -->
+      <main class="h-[80%] flex justify-center">
+        <div class="flex items-center">
+          <img
+            id="image"
+            class="max-h-full"
+            src="./src/images/img1.jpg"
+            alt=""
+          />
+        </div>
+      </main>
+
+      <!-- Download Btn && Back Next Btn -->
+      <nav class="w-full h-[calc(20%-24px)] flex justify-around items-center">
+        <button
+          id="back-btn"
+          class="p-8 hover:bg-green-500 transition-colors rounded-sm duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.9"
+            stroke="currentColor"
+            class="w-8 h-8 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <a id="download-img-btn" href="./src/images/img2.jpg" download>
+          <button
+            class="p-8 hover:bg-green-500 transition-colors rounded-sm duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
+            </svg>
+          </button>
+        </a>
+
+        <button
+          id="next-btn"
+          class="p-8 hover:bg-green-500 transition-colors rounded-sm duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.9"
+            stroke="currentColor"
+            class="w-8 h-8 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
